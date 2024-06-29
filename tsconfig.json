@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "allowJs": false,
+      "checkJs": false,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "commonjs",
+      "outDir": "./build",
+      "skipLibCheck": false,
+      "sourceMap": true,
+      "strict": true,
+      "target": "es2019",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "noEmit": false,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": false,
+      "jsx": "preserve"
+    },
+    "include": [
+      "next-env.d.ts",
+      "**/*.ts",
+      "**/*.tsx"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
