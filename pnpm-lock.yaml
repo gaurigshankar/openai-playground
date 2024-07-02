@@ -5,6 +5,7 @@ specifiers:
   '@types/js-yaml': ^4.0.9
   '@types/node': ^14.14.7
   '@types/node-fetch': ^2.5.11
+  axios: ^1.7.2
   dotenv: ^16.3.1
   dotenv-safe: ^8.2.0
   nodemon: ^2.0.6
@@ -17,6 +18,7 @@ specifiers:
   typescript: ^4.0.5
 
 dependencies:
+  axios: 1.7.2
   openai: 4.52.2
 
 devDependencies:
@@ -178,6 +180,16 @@ packages:
     dependencies:
       possible-typed-array-names: 1.0.0
     dev: true
+
+  /axios/1.7.2:
+    resolution: {integrity: sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==}
+    dependencies:
+      follow-redirects: 1.15.6
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
 
   /balanced-match/1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -465,6 +477,16 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
     dev: true
+
+  /follow-redirects/1.15.6:
+    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
 
   /for-each/0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
@@ -963,6 +985,10 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
+
+  /proxy-from-env/1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+    dev: false
 
   /pstree.remy/1.1.8:
     resolution: {integrity: sha512-77DZwxQmxKnu3aR542U+X8FypNzbfJ+C5XQDk3uWjWxn6151aIMGthWYRXTqT1E5oJvg+ljaa2OJi+VfvCOQ8w==}
